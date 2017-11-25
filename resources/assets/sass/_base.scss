@@ -1,0 +1,45 @@
+@import "variables";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $text-black;
+  font-weight: 400;
+
+  background: #ffffff;
+  padding: 20px;
+  height: 100vh;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-size: $text-large;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-size: $text-medium;
+  font-weight: 700;
+}
+
+header {
+  .logo {
+    max-height: 45px;
+    max-width: 45px;
+  }
+}
+
+.panel-group {
+  .panel {
+    border: none;
+    box-shadow: none;
+
+    .panel-heading {
+      padding: 0;
+    }
+    .panel-body {
+
+    }
+  }
+}
