@@ -8,10 +8,18 @@ $body-bg: #f5f8fa;
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700');
 
+@font-face {
+  font-family: 'Menlo';
+  src: url('../fonts/Menlo-Regular.woff');
+  src: url('../fonts/Menlo-Regular.ttf');
+}
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');  // backup if menlo doesn't work
+
 $text-black: #000000;
 
 $text-large: 1.75em;
 $text-medium: 1.25em;
+$text-small: 0.8em;
 
 // Navbar
 

@@ -1,6 +1,4 @@
 <div class="pt-page pt-page-2">
-    <h1>Me developer</h1>
-
     <div class="pt-triggers">
         <div id="dl-menu-whoami-developer" class="dl-menuwrapper">
             <ul class="dl-menu">
@@ -8,4 +6,11 @@
             </ul>
         </div><!-- /dl-menu-wrapper-->
     </div><!-- /triggers -->
+
+    <div class="whoami-developer-container">
+        <p>
+            <span class="purple">export class</span> <span class="yellow">Yunha</span> <span class="purple">implements</span> <span class="green">OnInit</span> { <br>
+            }
+        </p>
+    </div>
 </div>
