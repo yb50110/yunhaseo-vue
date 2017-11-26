@@ -5,11 +5,8 @@
 }
 
 .pt-perspective {
-  position: relative;
   width: 100%;
   height: 100%;
-  -webkit-perspective: 1200px;
-  perspective: 1200px;
 }
 
 .pt-page {
@@ -37,29 +34,19 @@
 /* Text Styles, Colors, Backgrounds */
 
 .pt-nav {
-  height: calc(100% - 45px);
-  padding: 0 60px;
+  padding: 70px 60px 20px 60px;
 }
 
 .pt-nav.shifted {
   padding-top: 10px;
 }
 
-.pt-page-0 {
-  padding-top: 70px;
-}
-
-.pt-page-0 .pt-triggers {
-  position: absolute;
-  bottom: 0;
-}
-
-.pt-page-1 .pt-triggers-bottom {
-  position: absolute;
-  bottom: 0;
-}
-
 /* Triggers (menu and button) */
+
+.pt-triggers.trigger-bottom {
+  position: absolute;
+  bottom: 20px;
+}
 
 .pt-triggers .dl-menuwrapper button,
 .pt-touch-button {
@@ -3106,10 +3093,85 @@ header .logo {
 }
 
 .whoami-developer-container {
-  background-color: #263238;
-  color: #89ddff;
   font-family: "Menlo", "Inconsolata", monospace;
+  padding: 50px 15px 20px 15px;
+  background-color: #263238;
   font-size: 0.8em;
+  overflow-y: scroll;
+  position: absolute;
+  line-height: 175%;
+  color: #89ddff;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.whoami-developer-container .pt-triggers {
+  padding: 13px 15px 2px 15px;
+  background-color: #e2e2e2;
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.whoami-developer-container .pt-triggers li {
+  height: 15px;
+  width: 15px;
+  background-color: #ff5f58;
+  border-radius: 50%;
+  position: relative;
+}
+
+.whoami-developer-container .pt-triggers li:before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: #ffbd2e;
+  border-radius: 50%;
+  position: absolute;
+  right: -25px;
+}
+
+.whoami-developer-container .pt-triggers li:after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: #28c941;
+  border-radius: 50%;
+  position: absolute;
+  right: -50px;
+}
+
+.whoami-developer-container .code {
+  padding-top: 25px;
+}
+
+.whoami-developer-container .code .highlight {
+  background: #1b252a;
+  position: absolute;
+  height: 1.5em;
+  z-index: 0;
+  top: 50px;
+  right: 0;
+  left: 0;
+}
+
+.whoami-developer-container .code .first-line {
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+}
+
+.indent {
+  padding-left: 10px;
+  border-left: 1px solid #34454d;
+}
+
+.indent:nth-of-type(1) {
+  padding-top: 20px;
 }
 
 .purple {
@@ -3134,5 +3196,56 @@ header .logo {
 
 .white {
   color: #d2dbf1;
+}
+
+.orange {
+  color: #f78c6c;
+}
+
+.whoami-designer-container {
+  padding-bottom: 35px;
+  background: #ffffff;
+  position: absolute;
+  overflow-y: scroll;
+  bottom: 0;
+  left: 0;
+  top: 0;
+}
+
+.whoami-designer-container .pt-triggers {
+  padding: 20px 0 5px 30px;
+  background: white;
+  position: fixed;
+  width: 100%;
+}
+
+.whoami-designer-container .pt-triggers li img {
+  width: 40px;
+}
+
+.whoami-designer-container .comic {
+  padding-top: 70px;
+}
+
+.whoami-designer-container .comic img {
+  width: 100%;
+}
+
+.whoami-designer-container .comic .comic-links {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.whoami-designer-container .comic .comic-links a {
+  float: left;
+  width: 50%;
+}
+
+.whoami-designer-container .comic .comic-links a:nth-child(2) {
+  width: 47%;
 }
 

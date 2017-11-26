@@ -49,9 +49,7 @@ Dec 2017
         @include('page-whoami-developer')
 
         {{-- pt-page-3 --}}
-        <div class="pt-page pt-page-3">
-            <h1>me designer</h1>
-        </div>
+        @include('page-whoami-designer')
 
         <div class="pt-page pt-page-4"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
         <div class="pt-page pt-page-5"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>

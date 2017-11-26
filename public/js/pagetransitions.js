@@ -57,6 +57,15 @@ var PageTransitions = (function() {
             }
         } );
 
+        // page-whoami-designer
+        $( '#dl-menu-whoami-designer' ).dlmenu( {
+            animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
+            onLinkClick : function( el, ev ) {
+                ev.preventDefault();
+                var showPage = el.data( 'destination' );
+                nextPage( el.data( 'animation' ), showPage );
+            }
+        } );
 	}
 
 	function nextPage(options, showPage ) {

@@ -8,8 +8,11 @@
             </div><!-- /dl-menu-wrapper-->
         </div><!-- /triggers -->
 
-        <div>
-            <span class="highlight"><span class="purple">export class</span> <span class="yellow">Yunha</span> <span class="purple">implements</span> <span class="green">OnInit</span> { </span><br>
+        <div class="code">
+            <span class="highlight"></span>
+            <div class="first-line">
+                <span class="purple">export class</span> <span class="yellow">Yunha</span> <span class="purple">implements</span> <span class="green">OnInit</span> { <br>
+            </div>
 
             <div class="indent">
                 <span class="red">fullName</span> = <span class="green">'Yun Ha Seo'</span>; <br>

@@ -1,3 +1,7 @@
+// *****************************************************
+// *************** developer page **********************
+// *****************************************************
+
 .whoami-developer-container {
   font-family: "Menlo", "Inconsolata", monospace;
   padding: 50px 15px 20px 15px;
@@ -15,7 +19,8 @@
   .pt-triggers {
     padding: 13px 15px 2px 15px;
     background-color: #e2e2e2;
-    position: absolute;
+    position: fixed;
+    z-index: 2;
     right: 0;
     left: 0;
     top: 0;
@@ -47,14 +52,34 @@
       }
     }
   }
+
+  .code {
+    padding-top: 25px;
+
+    .highlight {
+      background: #1b252a;
+      position: absolute;
+      height: 1.5em;
+      z-index: 0;
+      top: 50px;
+      right: 0;
+      left: 0;
+    }
+    .first-line {
+      position: absolute;
+      z-index: 1;
+      top: 50px;
+    }
+  }
 }
 
 .indent {
   padding-left: 10px;
   border-left: 1px solid #34454d;
+  &:nth-of-type(1) {
+    padding-top: 20px;
+  }
 }
-
-.highlight{ background: #1b252a; }
 
 .purple { color: #c792ea; }
 .yellow { color: #ffcb6b; }
@@ -63,3 +88,49 @@
 .blue { color: #82aaff; }
 .white { color: #d2dbf1; }
 .orange { color: #f78c6c; }
+
+
+// *****************************************************
+// **************** designer page **********************
+// *****************************************************
+
+.whoami-designer-container {
+  padding-bottom: 35px;
+  background: #ffffff;
+  position: absolute;
+  overflow-y: scroll;
+  bottom: 0;
+  left: 0;
+  top: 0;
+
+  .pt-triggers {
+    padding: 20px 0 5px 30px;
+    background: white;
+    position: fixed;
+    width: 100%;
+
+    li img {
+      width: 40px;
+    }
+  }
+
+  .comic {
+    padding-top: 70px;
+
+    img {
+      width: 100%;
+    }
+
+    .comic-links {
+      justify-content: space-around;
+      padding: 0 50px;
+      display: flex;
+
+      a {
+        float: left;
+        width: 50%;
+        &:nth-child(2) { width: 47%; } // unique styling because I messed up img cropping
+      }
+    }
+  }
+}
