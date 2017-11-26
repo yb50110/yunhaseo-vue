@@ -28,7 +28,7 @@ var PageTransitions = (function() {
 
 		$pages.eq( current ).addClass( 'pt-page-current' );
 
-		$( '#dl-menu' ).dlmenu( {
+		$( '#dl-menu-landing' ).dlmenu( {
 			animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
 			onLinkClick : function( el, ev ) {
 				ev.preventDefault();
@@ -38,7 +38,17 @@ var PageTransitions = (function() {
 		} );
 
 		// page-whoami
-        $( '#dl-menu2' ).dlmenu( {
+        $( '#dl-menu-whoami' ).dlmenu( {
+            animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
+            onLinkClick : function( el, ev ) {
+                ev.preventDefault();
+                var showPage = el.data( 'destination' );
+                nextPage( el.data( 'animation' ), showPage );
+            }
+        } );
+
+        // page-whoami-developer
+        $( '#dl-menu-whoami-developer' ).dlmenu( {
             animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
             onLinkClick : function( el, ev ) {
                 ev.preventDefault();

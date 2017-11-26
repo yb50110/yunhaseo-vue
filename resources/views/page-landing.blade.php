@@ -40,7 +40,7 @@
     </div>
 
     <div class="pt-triggers">
-        <div id="dl-menu" class="dl-menuwrapper">
+        <div id="dl-menu-landing" class="dl-menuwrapper">
             <ul class="dl-menu">
                 <li data-animation="11" data-destination="1"><h2>whoami</h2></li>
             </ul>

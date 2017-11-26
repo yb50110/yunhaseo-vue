@@ -31,20 +31,28 @@ Dec 2017
             {{--<button class="dl-trigger">Choose a transition</button>--}}
             {{--<ul class="dl-menu">--}}
                 {{--<li data-animation="11"><a href="#">Fade top / Fade bottom</a></li>--}}
+                {{--<li data-animation="21"><a href="#">Scale down / scale down</a></li>--}}
+                {{--<li data-animation="22"><a href="#">Scale up / scale up</a></li>--}}
                 {{--<li data-animation="12"><a href="#">Fade bottom / Fade top</a></li>--}}
             {{--</ul>--}}
         {{--</div><!-- /dl-menu-wrapper-->--}}
     {{--</div><!-- /triggers -->--}}
 
     <div id="pt-main" class="pt-perspective">
-        {{-- pt-page-1 --}}
+        {{-- pt-page-0 --}}
         @include('page-landing')
 
-        {{-- pt-page-2 --}}
+        {{-- pt-page-1 --}}
         @include('page-whoami')
 
-        <div class="pt-page pt-page-2"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
-        <div class="pt-page pt-page-3"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
+        {{-- pt-page-2 --}}
+        @include('page-whoami-developer')
+
+        {{-- pt-page-3 --}}
+        <div class="pt-page pt-page-3">
+            <h1>me designer</h1>
+        </div>
+
         <div class="pt-page pt-page-4"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
         <div class="pt-page pt-page-5"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
     </div>
