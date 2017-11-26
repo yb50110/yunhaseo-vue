@@ -1,12 +1,12 @@
 @import "variables";
 
 .pt-perspective {
-  position: relative;
+  //position: relative;
   width: 100%;
   height: 100%;
-  -webkit-perspective: 1200px;
-  -moz-perspective: 1200px;
-  perspective: 1200px;
+  //-webkit-perspective: 1200px;
+  //-moz-perspective: 1200px;
+  //perspective: 1200px;
 }
 
 .pt-page {
@@ -35,54 +35,22 @@
 }
 
 /* Text Styles, Colors, Backgrounds */
-
 .pt-nav {
-  height: calc(100% - 45px);  // 45px height of header
-  padding: 0 60px;
+  //height: calc(100% - 45px);  // 45px height of header
+  padding: 70px 60px 20px 60px;
 
   &.shifted {
     padding-top: 10px;
   }
 }
 
-// landing
-.pt-page-0 {
-  padding-top: 70px;
-  .pt-triggers {
-    position: absolute;
-    bottom: 0;
-  }
-}
-
-// whoami
-.pt-page-1 {
-  .pt-triggers-bottom {
-    position: absolute;
-    bottom: 0;
-  }
-}
-
-.pt-page-2 {
-
-}
-
-.pt-page-3 {
-
-}
-
-.pt-page-4 {
-
-}
-
-.pt-page-5 {
-
-}
-
-.pt-page-6 {
-
-}
-
 /* Triggers (menu and button) */
+.pt-triggers {
+  &.trigger-bottom {
+    position: absolute;
+    bottom: 20px;
+  }
+}
 
 .pt-triggers .dl-menuwrapper button,
 .pt-touch-button {

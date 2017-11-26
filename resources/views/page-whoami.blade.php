@@ -10,7 +10,7 @@
         </div><!-- /dl-menu-wrapper-->
     </div><!-- /triggers -->
 
-    <div class="pt-triggers-bottom">
+    <div class="pt-triggers trigger-bottom">
         <h2>email</h2>
     </div>
 
