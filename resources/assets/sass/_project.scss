@@ -1,0 +1,113 @@
+.panel-heading {
+  transition: 0.2s;
+  &[aria-expanded="true"] {
+    margin-left: -15px;
+  }
+}
+.project-panel {
+  padding: 30px 0 0 0;
+  border-top: none !important; // :(
+}
+
+// project object
+.project {
+  margin: 10px 0 20px 0;
+  width: 100%;
+
+  .project-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: $gray;
+    height: 225px;
+    width: 100%;
+  }
+  .project-title {
+    color: $red;
+  }
+}
+
+// project pages
+.pt-project {
+  background: #ffffff;
+  overflow-y: scroll;
+  padding: 0 20px;
+
+  .button-close {
+    padding: 20px 0 10px 0;
+    width: 25px;
+  }
+
+  .image-main {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: $gray;
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    left: 0;
+  }
+
+  .title {
+    font-size: $text-medium;
+    margin-bottom: 5px;
+    margin-top: 260px;
+  }
+  .subtitle {
+    font-size: $text-small;
+    color: $text-gray;
+  }
+  .body {
+    margin: 40px 0;
+  }
+
+  .image-half-container {
+    justify-content: space-between;
+    display: flex;
+  }
+  .image-half {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: calc(50% - 5px);
+    height: 330px;
+  }
+  .image-full {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: -20px;
+    width: calc(100% + 40px);
+  }
+}
+
+// custom owl-carousel overriding style
+.owl-dots {
+  counter-reset: dots;
+  text-align: left;
+  position: absolute;
+  top: -30px;
+
+  .owl-dot {
+    margin: 0;
+    float: left;
+
+    &:before {
+      counter-increment: dots;
+      font-family: 'Lora', serif;
+      font-size: $text-small;
+      font-weight: 700;
+      content: '.';
+    }
+
+    &.active:before {
+      content: counter(dots);
+    }
+  }
+
+  span {
+    visibility: hidden;
+  }
+}
+

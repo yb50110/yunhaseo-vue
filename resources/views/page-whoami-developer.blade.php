@@ -23,7 +23,7 @@
                         { <br>
                         <div class="indent">
                             <span class="red">title</span>: <span class="green">'Programmer & Graphic Designer'</span>, <br>
-                            <span class="red">years</span>: [<span class="green">'Mar 2017 - Present'</span>], <br>
+                            <span class="red">years</span>: <span class="green">'Mar 2017 to Present'</span>, <br>
                             <span class="red">company</span>: <span class="green">'B507: A Creative Media Mob'</span>, <br>
                             <span class="red">location</span>: <span class="green">'Mankato, MN, United States'</span>
                         </div>
@@ -31,7 +31,7 @@
                         { <br>
                         <div class="indent">
                             <span class="red">title</span>: <span class="green">'Front-end Developer & Designer'</span>, <br>
-                            <span class="red">years</span>: [<span class="green">'Feb 2016 - Jan 2017'</span>], <br>
+                            <span class="red">years</span>: <span class="green">'Feb 2016 to Jan 2017'</span>, <br>
                             <span class="red">company</span>: <span class="green">'B302: A Creative Media Mob'</span>, <br>
                             <span class="red">location</span>: <span class="green">'Arnhem, Netherlands'</span>
                         </div>
@@ -42,7 +42,7 @@
                 <span class="red">education</span> = { <br>
                 <div class="indent">
                     <span class="red">major</span>: <span class="green">'Computer Information Technology'</span>, <br>
-                    <span class="red">minor</span>: [<span class="green">'Art Studio (Graphic Design)'</span>], <br>
+                    <span class="red">minor</span>: <span class="green">'Art Studio (Graphic Design)'</span>, <br>
                     <span class="red">school</span>: <span class="green">'Minnesota State University, Mankato'</span>
                 </div>
                 }; <br>

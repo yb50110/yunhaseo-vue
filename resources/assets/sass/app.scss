@@ -1,9 +1,9 @@
-// Vendor: pagetransitions (direct changes made)
+// Vendor: pagetransitions (direct changes made), owl-carousel
 @import
-"pagetransitions/pagetransitions",
-"pagetransitions/animations",
-"pagetransitions/default",
-"pagetransitions/multilevelmenu";
+  "pagetransitions/pagetransitions",
+  "pagetransitions/animations",
+  "pagetransitions/default",
+  "pagetransitions/multilevelmenu";
 
 // Base
 @import "base";
@@ -12,4 +12,6 @@
 @import "variables";
 
 // Pages
-@import "whoami";
+@import
+  "whoami",
+  "project";
