@@ -36,8 +36,11 @@
 
 /* Text Styles, Colors, Backgrounds */
 .pt-nav {
-  //height: calc(100% - 45px);  // 45px height of header
-  padding: 70px 60px 20px 60px;
+  padding: 70px 0 20px 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+  }
 
   &.shifted {
     padding-top: 10px;
@@ -49,6 +52,10 @@
   &.trigger-bottom {
     position: absolute;
     bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      bottom: 50px;
+    }
   }
 }
 

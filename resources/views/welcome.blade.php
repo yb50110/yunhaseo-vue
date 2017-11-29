@@ -15,6 +15,8 @@ Dec 2017
         <title>Yunha's Space</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./owl-carousel/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./owl-carousel/owl.theme.default.min.css" />
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -42,21 +44,41 @@ Dec 2017
         {{-- pt-page-0 --}}
         @include('page-landing')
 
-        {{-- pt-page-1 --}}
-        @include('page-whoami')
+        {{-- WHOAMI --}}
+        @include('page-whoami') {{-- 1 --}}
+        @include('page-whoami-developer') {{-- 2 --}}
+        @include('page-whoami-designer') {{-- 3 --}}
 
-        {{-- pt-page-2 --}}
-        @include('page-whoami-developer')
+        {{-- PROJECTS--}}
+        @include('projects.pepoints') {{-- 4 --}}
+        @include('projects.safehr') {{-- 5 --}}
 
-        {{-- pt-page-3 --}}
-        @include('page-whoami-designer')
+        <div class="pt-project pt-page pt-page-6"></div>
 
-        <div class="pt-page pt-page-4"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
-        <div class="pt-page pt-page-5"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
     </div>
 
     <script src="js/jquery.dlmenu.js"></script>
+    {{--<script src="/node_modules/jquery/dist/jquery.js"></script>--}}
+    <script src="./owl-carousel/owl.carousel.min.js"></script>
     <script src="js/pagetransitions.js"></script>
+
+    {{-- custom global script --}}
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    1200: {
+                        items: 3,
+                        margin: 20
+                    }
+                }
+            });
+        });
+    </script>
     </body>
 
 </html>

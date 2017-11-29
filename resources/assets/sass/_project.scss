@@ -1,9 +1,10 @@
 .panel-heading {
-  transition: 0.2s;
   &[aria-expanded="true"] {
     margin-left: -15px;
+    transition: 0.2s;
   }
 }
+
 .project-panel {
   padding: 30px 0 0 0;
   border-top: none !important; // :(
@@ -59,7 +60,19 @@
     color: $text-gray;
   }
   .body {
+    text-align: justify;
+    line-height: 150%;
     margin: 40px 0;
+
+    .right { padding-left: 15px; }
+    .right-more { padding-left: 75px; }
+    .bold {
+      font-weight: 700;
+      width: 60px;
+      display: block;
+      float: left;
+    }
+    a { color: $text-black }
   }
 
   .image-half-container {
@@ -71,14 +84,18 @@
     background-position: center;
     background-size: contain;
     width: calc(50% - 5px);
+    margin: 20px 0;
     height: 330px;
   }
   .image-full {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    margin-left: -20px;
-    width: calc(100% + 40px);
+    background-size: contain;
+    //width: calc(100% + 40px);
+    //margin-left: -20px;
+    &.ipad {
+      height: 250px;
+    }
   }
 }
 

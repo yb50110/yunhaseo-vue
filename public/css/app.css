@@ -34,7 +34,13 @@
 /* Text Styles, Colors, Backgrounds */
 
 .pt-nav {
-  padding: 70px 60px 20px 60px;
+  padding: 70px 0 20px 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .pt-nav {
+    padding-top: 200px;
+  }
 }
 
 .pt-nav.shifted {
@@ -46,6 +52,12 @@
 .pt-triggers.trigger-bottom {
   position: absolute;
   bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .pt-triggers.trigger-bottom {
+    bottom: 50px;
+  }
 }
 
 .pt-triggers .dl-menuwrapper button,
@@ -3058,6 +3070,14 @@ body {
   height: 100vh;
 }
 
+@media screen and (min-width: 1200px) {
+  body {
+    position: relative;
+    width: 1000px;
+    margin: auto;
+  }
+}
+
 h1 {
   font-family: 'Lora', serif;
   font-size: 1.75em;
@@ -3071,9 +3091,19 @@ h2 {
   font-weight: 700;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 header .logo {
   max-height: 45px;
   max-width: 45px;
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    padding-top: 50px;
+  }
 }
 
 .panel-group .panel {
@@ -3212,6 +3242,12 @@ header .logo {
   top: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .whoami-designer-container {
+    width: 100%;
+  }
+}
+
 .whoami-designer-container .pt-triggers {
   padding: 20px 0 5px 30px;
   background: white;
@@ -3225,6 +3261,13 @@ header .logo {
 
 .whoami-designer-container .comic {
   padding-top: 70px;
+}
+
+@media screen and (min-width: 1200px) {
+  .whoami-designer-container .comic {
+    width: 500px;
+    margin: auto;
+  }
 }
 
 .whoami-designer-container .comic img {
@@ -3247,5 +3290,148 @@ header .logo {
 
 .whoami-designer-container .comic .comic-links a:nth-child(2) {
   width: 47%;
+}
+
+.panel-heading[aria-expanded="true"] {
+  margin-left: -15px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.project-panel {
+  padding: 30px 0 0 0;
+  border-top: none !important;
+}
+
+.project {
+  margin: 10px 0 20px 0;
+  width: 100%;
+}
+
+.project .project-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #eeeeee;
+  height: 225px;
+  width: 100%;
+}
+
+.project .project-title {
+  color: #d51c29;
+}
+
+.pt-project {
+  background: #ffffff;
+  overflow-y: scroll;
+  padding: 0 20px;
+}
+
+.pt-project .button-close {
+  padding: 20px 0 10px 0;
+  width: 25px;
+}
+
+.pt-project .image-main {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #eeeeee;
+  position: absolute;
+  height: 225px;
+  width: 100%;
+  left: 0;
+}
+
+.pt-project .title {
+  font-size: 1.25em;
+  margin-bottom: 5px;
+  margin-top: 260px;
+}
+
+.pt-project .subtitle {
+  font-size: 0.8em;
+  color: #adadad;
+}
+
+.pt-project .body {
+  text-align: justify;
+  line-height: 150%;
+  margin: 40px 0;
+}
+
+.pt-project .body .right {
+  padding-left: 15px;
+}
+
+.pt-project .body .right-more {
+  padding-left: 75px;
+}
+
+.pt-project .body .bold {
+  font-weight: 700;
+  width: 60px;
+  display: block;
+  float: left;
+}
+
+.pt-project .body a {
+  color: #000000;
+}
+
+.pt-project .image-half-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pt-project .image-half {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: calc(50% - 5px);
+  margin: 20px 0;
+  height: 330px;
+}
+
+.pt-project .image-full {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.pt-project .image-full.ipad {
+  height: 250px;
+}
+
+.owl-dots {
+  counter-reset: dots;
+  text-align: left;
+  position: absolute;
+  top: -30px;
+}
+
+.owl-dots .owl-dot {
+  margin: 0;
+  float: left;
+}
+
+.owl-dots .owl-dot:before {
+  counter-increment: dots;
+  font-family: 'Lora', serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  content: '.';
+}
+
+.owl-dots .owl-dot.active:before {
+  content: counter(dots);
+}
+
+.owl-dots span {
+  visibility: hidden;
 }
 
