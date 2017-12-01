@@ -55,6 +55,5 @@
         <span class="right">Held multiple feedback moments</span> <br>
         <span class="right-more">Communicated cross-expertise</span> <br>
         <span class="right-more">Practiced coding conventions</span>
-        <br><br>
     </p>
 </div>

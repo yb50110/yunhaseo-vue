@@ -36,7 +36,23 @@ var PageTransitions = (function() {
 				nextPage( el.data( 'animation' ), showPage );
 			}
 		} );
-        $( '#dl-menu-landing-projects' ).dlmenu( {
+        $( '#dl-menu-landing-projects-development' ).dlmenu( {
+            animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
+            onLinkClick : function( el, ev ) {
+                ev.preventDefault();
+                var showPage = el.data( 'destination' );
+                nextPage( el.data( 'animation' ), showPage );
+            }
+        } );
+        $( '#dl-menu-landing-projects-design' ).dlmenu( {
+            animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
+            onLinkClick : function( el, ev ) {
+                ev.preventDefault();
+                var showPage = el.data( 'destination' );
+                nextPage( el.data( 'animation' ), showPage );
+            }
+        } );
+        $( '#dl-menu-landing-projects-illustration' ).dlmenu( {
             animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
             onLinkClick : function( el, ev ) {
                 ev.preventDefault();
@@ -55,6 +71,22 @@ var PageTransitions = (function() {
             }
         } );
         $( '#dl-menu-project-safehr' ).dlmenu( {
+            animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
+            onLinkClick : function( el, ev ) {
+                ev.preventDefault();
+                var showPage = el.data( 'destination' );
+                nextPage( el.data( 'animation' ), showPage );
+            }
+        } );
+        $( '#dl-menu-project-spijkergoed' ).dlmenu( {
+            animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
+            onLinkClick : function( el, ev ) {
+                ev.preventDefault();
+                var showPage = el.data( 'destination' );
+                nextPage( el.data( 'animation' ), showPage );
+            }
+        } );
+        $( '#dl-menu-project-petiteaparis' ).dlmenu( {
             animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
             onLinkClick : function( el, ev ) {
                 ev.preventDefault();
@@ -104,7 +136,7 @@ var PageTransitions = (function() {
 
 		console.log('showpage: ', showPage);
 		console.log('page count: ', pagesCount);
-		if( showPage < pagesCount - 1 ) {
+		if( showPage <= pagesCount - 1 ) {
 			current = showPage;
 		}
 		else {

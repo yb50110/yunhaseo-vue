@@ -34,7 +34,7 @@
 /* Text Styles, Colors, Backgrounds */
 
 .pt-nav {
-  padding: 70px 0 20px 60px;
+  padding: 90px 0 20px 80px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -3106,6 +3106,16 @@ header .logo {
   }
 }
 
+footer {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  font-size: 0.6em;
+  color: #adadad;
+  bottom: 90px;
+  left: -40px;
+}
+
 .panel-group .panel {
   border: none;
   -webkit-box-shadow: none;
@@ -3304,7 +3314,7 @@ header .logo {
 }
 
 .project {
-  margin: 10px 0 20px 0;
+  margin: 10px 0 10px 0;
   width: 100%;
 }
 
@@ -3322,9 +3332,9 @@ header .logo {
 }
 
 .pt-project {
+  padding: 0 20px 50px 20px;
   background: #ffffff;
   overflow-y: scroll;
-  padding: 0 20px;
 }
 
 .pt-project .button-close {
@@ -3355,7 +3365,6 @@ header .logo {
 }
 
 .pt-project .body {
-  text-align: justify;
   line-height: 150%;
   margin: 40px 0;
 }
@@ -3401,10 +3410,18 @@ header .logo {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  height: 250px;
 }
 
 .pt-project .image-full.ipad {
   height: 250px;
+}
+
+.pt-project .image-full.cover-entire-width {
+  width: calc(100% + 40px);
+  background-size: cover;
+  margin-left: -20px;
+  height: 350px;
 }
 
 .owl-dots {

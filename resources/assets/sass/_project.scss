@@ -12,7 +12,7 @@
 
 // project object
 .project {
-  margin: 10px 0 20px 0;
+  margin: 10px 0 10px 0;
   width: 100%;
 
   .project-image {
@@ -30,9 +30,9 @@
 
 // project pages
 .pt-project {
+  padding: 0 20px 50px 20px;
   background: #ffffff;
   overflow-y: scroll;
-  padding: 0 20px;
 
   .button-close {
     padding: 20px 0 10px 0;
@@ -60,7 +60,6 @@
     color: $text-gray;
   }
   .body {
-    text-align: justify;
     line-height: 150%;
     margin: 40px 0;
 
@@ -91,10 +90,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    //width: calc(100% + 40px);
-    //margin-left: -20px;
+    height: 250px;
+
     &.ipad {
       height: 250px;
+    }
+    &.cover-entire-width {
+      width: calc(100% + 40px);
+      background-size: cover;
+      margin-left: -20px;
+      height: 350px;
     }
   }
 }

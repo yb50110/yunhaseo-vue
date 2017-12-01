@@ -52,10 +52,14 @@ Dec 2017
         {{-- PROJECTS--}}
         @include('projects.pepoints') {{-- 4 --}}
         @include('projects.safehr') {{-- 5 --}}
+        @include('projects.spijkergoed') {{-- 6 --}}
+        @include('projects.petiteaparis') {{-- 7 --}}
 
-        <div class="pt-project pt-page pt-page-6"></div>
+        {{--<div class="pt-project pt-page pt-page-6"></div>--}}
 
     </div>
+
+    @include('footer')
 
     <script src="js/jquery.dlmenu.js"></script>
     {{--<script src="/node_modules/jquery/dist/jquery.js"></script>--}}

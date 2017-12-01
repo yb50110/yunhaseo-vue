@@ -43,6 +43,15 @@ header {
   }
 }
 
+footer {
+  transform: rotate(-90deg);
+  position: absolute;
+  font-size: 0.6em;
+  color: #adadad;
+  bottom: 90px;
+  left: -40px;
+}
+
 .panel-group {
   .panel {
     border: none;

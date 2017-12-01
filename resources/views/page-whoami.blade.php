@@ -10,8 +10,21 @@
         </div><!-- /dl-menu-wrapper-->
     </div><!-- /triggers -->
 
-    <div class="pt-triggers trigger-bottom">
+    <div class="pt-triggers trigger-bottom trigger-email">
         <h2>email</h2>
+        
+        <div class="email-options">
+            <a href="">open mail app</a>
+            <a href="" value="">copy address</a>
+        </div>
     </div>
 
 </div>
+
+<script>
+    
+    $('.trigger-email').on('click', function(){
+        
+    });
+    
+</script>

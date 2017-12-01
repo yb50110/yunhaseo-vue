@@ -41,17 +41,9 @@
 
     <p class="body">
         The project currently has 6 developers and 1 project manager, where none of members have been around since the
-        dawn of the project. Thus, there have been countless communication problems, code conflicts, scope creeps,
-        and disconnect from the vision of the client. Bettering communication and writing legible code has been a
-        continuous effort by every team member.
+        dawn of the project. Thus, we have had some hiccups relating to communication, coding, and scope creeps.
+        Nevertheless, we were able to trek through all these issues and create a functioning and usable product.
         <br><br>
-
-        Without a doubt, there have been many internal conflict between the members. I had a personal conflict with
-        one of the members but recognized that it should not affect the professional work environment. I spoke with my
-        project manager, who is also our office manager, and he gave me some advice and steps I could take to resolve
-        it. Following his suggestions, I had a conversation with that member, expressing my frustrations and
-        apologizing for my hostility. Since then, my relationship with this member has improved tremendously,
-        which has boosted the morals and cooperation needed to complete assigned tasks.
     </p>
 
     <p class="body">

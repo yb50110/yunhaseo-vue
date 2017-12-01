@@ -2,14 +2,14 @@
     <div class="panel-group" id="accordion-landing">
 
         <div class="panel">
-            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion-landing" href="#collapse-landing-1" onclick="shiftNav()">
+            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion-landing" href="#collapse-landing-1">
                 <h1>development</h1>
             </div>
             <div id="collapse-landing-1" class="panel-collapse collapse">
                 <div class="panel-body project-panel">
 
                     <div class="pt-triggers">
-                        <div id="dl-menu-landing-projects" class="dl-menuwrapper">
+                        <div id="dl-menu-landing-projects-development" class="dl-menuwrapper">
 
                             <ul class="dl-menu owl-carousel owl-theme">
                                 <li data-animation="22" data-destination="4">
@@ -36,25 +36,55 @@
         </div>
 
         <div class="panel">
-            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion-landing" href="#collapse-landing2" onclick="shiftNav()">
+            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion-landing" href="#collapse-landing2">
                 <h1>design</h1>
             </div>
             <div id="collapse-landing2" class="panel-collapse collapse">
-                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <div class="panel-body project-panel">
+
+                    <div class="pt-triggers">
+                        <div id="dl-menu-landing-projects-design" class="dl-menuwrapper">
+
+                            <ul class="dl-menu owl-carousel owl-theme">
+                                <li data-animation="22" data-destination="6">
+                                    <div class="project">
+                                        <div class="project-image"
+                                             style="background-image: url('./img/spijkergoed/main.jpg');background-position: -60px -45px;background-size: 170% 170%;"></div>
+                                        <h2 class="project-title">Spijkergoed</h2>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div><!-- /dl-menu-wrapper-->
+                    </div><!-- /triggers -->
+
                 </div>
             </div>
         </div>
 
         <div class="panel">
-            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion-landing" href="#collapse-landing-3" onclick="shiftNav()">
+            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion-landing" href="#collapse-landing-3">
                 <h1>illustration</h1>
             </div>
             <div id="collapse-landing-3" class="panel-collapse collapse">
-                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <div class="panel-body project-panel">
+
+                    <div class="pt-triggers">
+                        <div id="dl-menu-landing-projects-illustration" class="dl-menuwrapper">
+
+                            <ul class="dl-menu owl-carousel owl-theme">
+                                <li data-animation="22" data-destination="7">
+                                    <div class="project">
+                                        <div class="project-image"
+                                             style="background-image: url('./img/petiteaparis/main.jpg');background-position: -145px -30px;background-size: 200%;"></div>
+                                        <h2 class="project-title">Petite a Paris Illustration</h2>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div><!-- /dl-menu-wrapper-->
+                    </div><!-- /triggers -->
+
                 </div>
             </div>
         </div>
@@ -64,7 +94,7 @@
     <div class="pt-triggers trigger-bottom">
         <div id="dl-menu-landing" class="dl-menuwrapper">
             <ul class="dl-menu">
-                <li data-animation="11" data-destination="1"><h2>whoami</h2></li>
+                <li data-animation="11" data-destination="1" onclick="closePanels()"><h2>whoami</h2></li>
             </ul>
         </div><!-- /dl-menu-wrapper-->
     </div><!-- /triggers -->
@@ -72,11 +102,10 @@
 
 <script>
     /**
-     * shift the pt-nav up when a panel is open
-     * reduce font-size of other nav items when not open
+     * close all panel upon moving to the whoami pages
      */
-    function shiftNav() {
-        // todo
+    function closePanels() {
+        $('.panel-collapse').removeClass('in');
+        $('.panel-heading').attr('aria-expanded', 'false');
     }
-
 </script>
