@@ -49,6 +49,13 @@
 
 /* Triggers (menu and button) */
 
+.pt-triggers {
+  -webkit-animation-name: onLoadEffect;
+          animation-name: onLoadEffect;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
 .pt-triggers.trigger-bottom {
   position: absolute;
   bottom: 20px;
@@ -57,6 +64,18 @@
 @media screen and (min-width: 1200px) {
   .pt-triggers.trigger-bottom {
     bottom: 50px;
+  }
+}
+
+@-webkit-keyframes onLoadEffect {
+  from {
+
+  }
+}
+
+@keyframes onLoadEffect {
+  from {
+
   }
 }
 
@@ -3116,6 +3135,15 @@ footer {
   left: -40px;
 }
 
+@media screen and (min-width: 1200px) {
+  footer {
+    -webkit-transform: none;
+            transform: none;
+    bottom: 10px;
+    left: 80px;
+  }
+}
+
 .panel-group .panel {
   border: none;
   -webkit-box-shadow: none;
@@ -3130,6 +3158,36 @@ footer {
   font-family: 'Menlo';
   src: url(/fonts/Menlo-Regular.woff?b01d11a9b3411615d4fc492aa57ebca9);
   src: url(/fonts/Menlo-Regular.ttf?9f94dc20bb2a09c15241d3a880b7ad01);
+}
+
+.email-options {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  position: absolute;
+  width: 200px;
+  z-index: 11;
+  top: -50px;
+}
+
+.email-options a {
+  color: #000000;
+  line-height: 30px;
+  display: block;
+}
+
+.email-options a:hover {
+  color: #000000;
+}
+
+.email-background {
+  background: #ffffff;
+  position: absolute;
+  height: 100vh;
+  opacity: 0.8;
+  width: 100vw;
+  z-index: 10;
+  left: 0;
+  top: 0;
 }
 
 .whoami-developer-container {

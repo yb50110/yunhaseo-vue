@@ -50,6 +50,12 @@ footer {
   color: #adadad;
   bottom: 90px;
   left: -40px;
+
+  @media screen and (min-width: 1200px) {
+    transform: none;
+    bottom: 10px;
+    left: 80px;
+  }
 }
 
 .panel-group {

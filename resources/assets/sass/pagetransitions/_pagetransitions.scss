@@ -49,6 +49,9 @@
 
 /* Triggers (menu and button) */
 .pt-triggers {
+  animation-name: onLoadEffect;
+  animation-duration: 3s;
+
   &.trigger-bottom {
     position: absolute;
     bottom: 20px;
@@ -57,6 +60,9 @@
       bottom: 50px;
     }
   }
+}
+@keyframes onLoadEffect {
+  from {  }
 }
 
 .pt-triggers .dl-menuwrapper button,

@@ -1,5 +1,7 @@
 <div class="pt-nav pt-page pt-page-1">
 
+    <div class="email-background"></div>
+
     <div class="pt-triggers">
         <div id="dl-menu-whoami" class="dl-menuwrapper">
             <ul class="dl-menu">
@@ -14,17 +16,38 @@
         <h2>email</h2>
         
         <div class="email-options">
-            <a href="">open mail app</a>
-            <a href="" value="">copy address</a>
+            <a href="mailto:yunha.tonik.seo@gmail.com">open mail app</a>
+            <input type="text" value="yunha.tonik.seo@gmail.com" id="copy-my-email" style="opacity: 0; position: absolute; z-index: -1">
+            <a onclick="copyEmail()">copy email</a>
         </div>
     </div>
 
 </div>
 
 <script>
-    
-    $('.trigger-email').on('click', function(){
-        
+
+    function copyEmail() {
+        var copyText = document.getElementById("copy-my-email");
+        copyText.select();
+        document.execCommand("Copy");
+        alert("Copied the text: " + copyText.value);
+    }
+
+    $(document).ready(function() {
+       $('.email-options').hide();
+       $('.email-background').hide();
+
+       // show email options
+       $('.trigger-email').click(function() {
+           $('.email-options').fadeIn();
+           $('.email-background').fadeIn();
+       });
+
+       // hide email options when tapped outside of the options
+        $('.email-background').click(function() {
+            $('.email-options').fadeOut();
+            $('.email-background').fadeOut();
+        });
     });
     
 </script>
