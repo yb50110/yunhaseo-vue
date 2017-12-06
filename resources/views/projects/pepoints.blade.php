@@ -4,7 +4,8 @@
         <div id="dl-menu-project-pepoints" class="dl-menuwrapper">
             <ul class="dl-menu">
                 <li data-animation="21" data-destination="0">
-                    <img class="button-close" src="{{ asset('./img/button-close.png') }}" alt="Close button">
+                    <h3 class="red">development</h3>
+                    {{--<img class="button-close" src="{{ asset('./img/button-close.png') }}" alt="Close button">--}}
                 </li>
             </ul>
         </div><!-- /dl-menu-wrapper-->
@@ -56,4 +57,6 @@
         <span class="right-more">Communicated cross-expertise</span> <br>
         <span class="right-more">Practiced coding conventions</span>
     </p>
+
+    <div class="clearfix"></div>
 </div>

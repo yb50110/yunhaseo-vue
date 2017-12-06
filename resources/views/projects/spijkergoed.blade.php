@@ -4,7 +4,8 @@
         <div id="dl-menu-project-spijkergoed" class="dl-menuwrapper">
             <ul class="dl-menu">
                 <li data-animation="21" data-destination="0">
-                    <img class="button-close" src="{{ asset('./img/button-close.png') }}" alt="Close button">
+                    <h3 class="red">design</h3>
+                    {{--<img class="button-close" src="{{ asset('./img/button-close.png') }}" alt="Close button">--}}
                 </li>
             </ul>
         </div><!-- /dl-menu-wrapper-->

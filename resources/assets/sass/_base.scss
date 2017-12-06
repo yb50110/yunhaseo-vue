@@ -27,23 +27,49 @@ h2 {
   font-size: $text-medium;
   font-weight: 700;
 }
+h3 {
+  font-family: 'Lora', serif;
+  font-size: $text-small;
+  font-weight: 700;
+
+  &.red {
+    color: $red;
+  }
+}
 
 .bold {
   font-weight: 700;
 }
 
 header {
+  animation-name: onLoadEffect-fadein;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  opacity: 0;
+
   .logo {
     max-height: 45px;
     max-width: 45px;
   }
 
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    padding-left: 40px;
+  }
   @media screen and (min-width: 1200px) {
     padding-top: 50px;
+    padding-left: 0;
   }
 }
 
 footer {
+  animation-name: onLoadEffect-fadein;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  opacity: 0;
+
   transform: rotate(-90deg);
   position: absolute;
   font-size: 0.6em;
@@ -51,6 +77,9 @@ footer {
   bottom: 90px;
   left: -40px;
 
+  @media screen and (min-width: 768px) {
+    left: 15px;
+  }
   @media screen and (min-width: 1200px) {
     transform: none;
     bottom: 10px;
@@ -71,3 +100,21 @@ footer {
     }
   }
 }
+
+@keyframes onLoadEffect-fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes onLoadEffect-slideFromLeft {
+  0% { margin-left: -30px; opacity: 0; }
+  100% { margin-left: 0; opacity: 1; }
+}
+@keyframes onLoadEffect-slideFromRight {
+  0% { margin-left: 30px; opacity: 0; }
+  100% { margin-left: 0; opacity: 1; }
+}
+@keyframes onLoadEffect-slideFromBottom {
+  0% { margin-top: 70px; }
+  100% { margin-top: 0; }
+}
+

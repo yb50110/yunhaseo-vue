@@ -36,10 +36,13 @@
 
 /* Text Styles, Colors, Backgrounds */
 .pt-nav {
-  padding: 90px 0 20px 80px;;
+  padding: 90px 0 20px 80px;
 
+  @media screen and (min-width: 768px) {
+    padding: 170px 0 20px 130px;
+  }
   @media screen and (min-width: 1200px) {
-    padding-top: 200px;
+    padding: 200px 0 20px 80px;
   }
 
   &.shifted {
@@ -47,12 +50,43 @@
   }
 }
 
+.pt-page-0 {
+  .panel-group {
+    animation-name: onLoadEffect-slideFromBottom;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    margin-top: 70px;
+
+    .panel {
+      .panel-heading {
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+      }
+
+      &:nth-of-type(1) {
+        .panel-heading {
+          animation-name: onLoadEffect-slideFromLeft;
+        }
+      }
+      &:nth-of-type(2) {
+        .panel-heading {
+          animation-name: onLoadEffect-slideFromRight;
+        }
+      }
+      &:nth-of-type(3) {
+        .panel-heading {
+          animation-name: onLoadEffect-slideFromLeft;
+        }
+      }
+    }
+  }
+}
+
 /* Triggers (menu and button) */
 .pt-triggers {
-  animation-name: onLoadEffect;
-  animation-duration: 3s;
-
   &.trigger-bottom {
+    animation: none;
     position: absolute;
     bottom: 20px;
 
@@ -60,9 +94,18 @@
       bottom: 50px;
     }
   }
-}
-@keyframes onLoadEffect {
-  from {  }
+
+  &.with-animation {
+    animation-name: onLoadEffect-fadein;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    opacity: 0;
+  }
+
+  li {
+    cursor: pointer;
+  }
 }
 
 .pt-triggers .dl-menuwrapper button,

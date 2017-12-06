@@ -53,6 +53,13 @@
                                         <h2 class="project-title">Spijkergoed</h2>
                                     </div>
                                 </li>
+                                <li data-animation="22" data-destination="8">
+                                    <div class="project">
+                                        <div class="project-image"
+                                             style="background-image: url('./img/swan/main.png');background-size: cover;"></div>
+                                        <h2 class="project-title">Swan</h2>
+                                    </div>
+                                </li>
                             </ul>
 
                         </div><!-- /dl-menu-wrapper-->
@@ -91,7 +98,7 @@
 
     </div>
 
-    <div class="pt-triggers trigger-bottom">
+    <div class="pt-triggers trigger-bottom with-animation">
         <div id="dl-menu-landing" class="dl-menuwrapper">
             <ul class="dl-menu">
                 <li data-animation="11" data-destination="1" onclick="closePanels()"><h2>whoami</h2></li>

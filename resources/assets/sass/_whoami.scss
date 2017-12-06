@@ -1,7 +1,7 @@
 .email-options {
   font-family: 'Lora', serif;
-  font-weight: 700;
   position: absolute;
+  font-weight: 700;
   width: 200px;
   z-index: 11;
   top: -50px;
@@ -12,9 +12,17 @@
     display: block;
 
     &:hover {
+      text-decoration: none;
       color: $text-black;
     }
   }
+}
+
+.email-copied-popup {
+  padding: 10px 10px 1px 10px;
+  background: $gray;
+  color: $text-gray;
+  display: none;
 }
 
 .email-background {
@@ -171,5 +179,15 @@
         &:nth-child(2) { width: 47%; } // unique styling because I messed up img cropping
       }
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pt-page-2.pt-page-current, .pt-page-3.pt-page-current {
+    height: calc(100vh - 50px);
+    left: initial;
+    width: 50%;
+    right: 0;
+    top: 50px;
   }
 }

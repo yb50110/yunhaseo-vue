@@ -28,6 +28,15 @@ var PageTransitions = (function() {
 
 		$pages.eq( current ).addClass( 'pt-page-current' );
 
+        $( '#dl-menu-header' ).dlmenu( {
+            animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
+            onLinkClick : function( el, ev ) {
+                ev.preventDefault();
+                var showPage = el.data( 'destination' );
+                nextPage( el.data( 'animation' ), showPage );
+            }
+        } );
+
 		$( '#dl-menu-landing' ).dlmenu( {
 			animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
 			onLinkClick : function( el, ev ) {
@@ -40,6 +49,7 @@ var PageTransitions = (function() {
             animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
             onLinkClick : function( el, ev ) {
                 ev.preventDefault();
+                $('.pt-page-1').addClass('desktop-half-page');
                 var showPage = el.data( 'destination' );
                 nextPage( el.data( 'animation' ), showPage );
             }
@@ -94,6 +104,14 @@ var PageTransitions = (function() {
                 nextPage( el.data( 'animation' ), showPage );
             }
         } );
+        $( '#dl-menu-project-swan' ).dlmenu( {
+            animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
+            onLinkClick : function( el, ev ) {
+                ev.preventDefault();
+                var showPage = el.data( 'destination' );
+                nextPage( el.data( 'animation' ), showPage );
+            }
+        } );
 
 		// whoami pages
         $( '#dl-menu-whoami' ).dlmenu( {
@@ -134,15 +152,12 @@ var PageTransitions = (function() {
 		
 		var $currPage = $pages.eq( current );
 
-		console.log('showpage: ', showPage);
-		console.log('page count: ', pagesCount);
 		if( showPage <= pagesCount - 1 ) {
 			current = showPage;
 		}
 		else {
 			current = 0;
 		}
-		console.log('current:', current);
 
 		var $nextPage = $pages.eq( current ).addClass( 'pt-page-current' ),
 			outClass = '', inClass = '';
@@ -439,7 +454,6 @@ var PageTransitions = (function() {
 		if( !support ) {
 			onEndAnimation( $currPage, $nextPage );
 		}
-
 	}
 
 	function onEndAnimation( $outpage, $inpage ) {
@@ -452,6 +466,10 @@ var PageTransitions = (function() {
 	function resetPage( $outpage, $inpage ) {
 		$outpage.attr( 'class', $outpage.data( 'originalClassList' ) );
 		$inpage.attr( 'class', $inpage.data( 'originalClassList' ) + ' pt-page-current' );
+
+		// if ( $('.pt-page-2').hasClass('pt-page-current') ||  $('.pt-page-3').hasClass('pt-page-current') ) {
+         //    $('.pt-page-1').addClass('desktop-half-page');
+		// }
 	}
 
 	init();

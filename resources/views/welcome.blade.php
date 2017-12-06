@@ -54,6 +54,7 @@ Dec 2017
         @include('projects.safehr') {{-- 5 --}}
         @include('projects.spijkergoed') {{-- 6 --}}
         @include('projects.petiteaparis') {{-- 7 --}}
+        @include('projects.swan') {{-- 7 --}}
 
         {{--<div class="pt-project pt-page pt-page-6"></div>--}}
 
@@ -70,14 +71,20 @@ Dec 2017
     <script>
         $(document).ready(function(){
             $('.owl-carousel').owlCarousel({
-                loop: true,
                 responsive: {
                     0: {
-                        items: 1
+                        items: 1,
+                        loop: true,
+                    },
+                    768: {
+                        items: 2,
+                        margin: 20,
+                        loop: false
                     },
                     1200: {
                         items: 3,
-                        margin: 20
+                        margin: 20,
+                        loop: false
                     }
                 }
             });
